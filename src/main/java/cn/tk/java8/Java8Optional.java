@@ -1,11 +1,10 @@
-package cn.tk.guava;
+package cn.tk.java8;
 
 import org.junit.Test;
 
 import java.util.Optional;
-import java.util.function.Supplier;
 
-import static java.lang.System.*;
+import static java.lang.System.out;
 
 /**
  * Created by xiedan11 on 2016/11/24.
