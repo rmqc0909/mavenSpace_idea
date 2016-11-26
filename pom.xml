@@ -8,12 +8,13 @@
   <name>demo Maven Webapp</name>
   <url>http://maven.apache.org</url>
   <dependencies>
+    <!-- https://mvnrepository.com/artifact/junit/junit -->
     <dependency>
       <groupId>com.google.guava</groupId>
       <artifactId>guava</artifactId>
       <version>20.0</version>
     </dependency>
-    <!-- https://mvnrepository.com/artifact/junit/junit -->
+
     <dependency>
       <groupId>junit</groupId>
       <artifactId>junit</artifactId>

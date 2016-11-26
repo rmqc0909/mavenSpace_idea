@@ -15,13 +15,13 @@ public class Lambda {
         List<Integer> list1;
         list1 = new ArrayList<Integer>();
         for(int i = 0;i<500;i++)
-        System.out.println(list1.parallelStream()
+            System.out.println(list1.parallelStream()
 //                .filter(x -> x > 2)
 //                .distinct()
 //                .mapToInt(x -> x * x)
 //                .limit(2)
-                .reduce("start", (x,y) -> x+y, (x,y) -> x + "\r\n" + y)
-        );
+                            .reduce("start", (x,y) -> x+y, (x,y) -> x + "\r\n" + y)
+            );
 
         List<Integer> list = new ArrayList<Integer>();
         list.add(3);
@@ -32,7 +32,7 @@ public class Lambda {
     }
 
     /**
-     * Lambda表达式之前，要新建一个线程，需要这样写
+     * Lambda琛ㄨ揪寮忎箣鍓嶏紝瑕佹柊寤轰竴涓嚎绋嬶紝闇�瑕佽繖鏍峰啓
      */
     private static void beforeLambda() {
         new Thread(new Runnable() {
@@ -44,24 +44,24 @@ public class Lambda {
     }
 
     /**
-     * 有了lambda表达式之后的写法
+     * 鏈変簡lambda琛ㄨ揪寮忎箣鍚庣殑鍐欐硶
      */
     private static void afterLambda() {
         new Thread(() -> System.out.println("Thread is running!")).start();
     }
 
     /**
-     * lambda表达式的几种写法
+     * lambda琛ㄨ揪寮忕殑鍑犵鍐欐硶
      */
 
     private static void waysOfLambda() {
-        Runnable runnable = () -> System.out.println("Hello World!");   //写法1
+        Runnable runnable = () -> System.out.println("Hello World!");   //鍐欐硶1
         Runnable mutilline = () -> {
             System.out.println("Hello");
             System.out.println("World");
-        };  //写法2
-        ActionListener listener = event -> System.out.println("button clicked");    //写法3
-        BinaryOperator<Long> add = (Long x, Long y) -> x + y;   //写法4
-        BinaryOperator<Long> addImplicit = (x, y) -> x + y;     //写法5
+        };  //鍐欐硶2
+        ActionListener listener = event -> System.out.println("button clicked");    //鍐欐硶3
+        BinaryOperator<Long> add = (Long x, Long y) -> x + y;   //鍐欐硶4
+        BinaryOperator<Long> addImplicit = (x, y) -> x + y;     //鍐欐硶5
     }
 }
