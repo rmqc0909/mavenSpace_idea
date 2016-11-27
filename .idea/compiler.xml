@@ -25,7 +25,7 @@
         <module name="mavenSpace_idea" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel target="1.8">
+    <bytecodeTargetLevel>
       <module name="mavenSpace_idea" target="1.8" />
     </bytecodeTargetLevel>
   </component>

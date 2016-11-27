@@ -12,9 +12,9 @@ public class GuavaOptional {
 
 
     /**
-     * 1.Optional.of(T)：获得一个Optional对象，其内部包含了一个非null的T数据类型实例，若T=null，则立刻报错。
-     * 2.Optional.absent()：获得一个Optional对象，其内部包含了空值。
-     * 3.Optional.fromNullable(T)：将一个T的实例转换为Optional对象，T的实例可以不为空，也可以为空，Optional.fromNullable(null)，和Optional.absent()等价。
+     * 1.OptionalTest.of(T)：获得一个Optional对象，其内部包含了一个非null的T数据类型实例，若T=null，则立刻报错。
+     * 2.OptionalTest.absent()：获得一个Optional对象，其内部包含了空值。
+     * 3.OptionalTest.fromNullable(T)：将一个T的实例转换为Optional对象，T的实例可以不为空，也可以为空，OptionalTest.fromNullable(null)，和Optional.absent()等价。
      * @throws Exception
      */
     @Test

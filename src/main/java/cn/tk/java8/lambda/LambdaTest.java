@@ -1,4 +1,4 @@
-package cn.tk.java8;
+package cn.tk.java8.lambda;
 
 import java.awt.event.ActionListener;
 import java.util.ArrayList;
@@ -9,7 +9,7 @@ import java.util.stream.Collectors;
 /**
  * Created by xiedan11 on 2016/11/18.
  */
-public class Lambda {
+public class LambdaTest {
     public static void main(String[] args) {
         //beforeLambda();
         List<Integer> list1;
