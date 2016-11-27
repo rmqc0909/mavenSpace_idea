@@ -11,20 +11,12 @@ public class Person {
     public Optional<Car> getCar() {
         return car;
     }
-}
 
-class Car {
-    private Optional<Insurance> insurance;
-
-    public Optional<Insurance> getInsurance() {
-        return insurance;
+    public void setCar(Optional<Car> car) {
+        this.car = car;
     }
 }
 
-class Insurance {
-    private String name;
 
-    public String getName() {
-        return name;
-    }
-}
+
+

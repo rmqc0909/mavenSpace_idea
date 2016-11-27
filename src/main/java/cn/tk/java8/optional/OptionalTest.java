@@ -2,6 +2,8 @@ package cn.tk.java8.optional;
 
 import org.junit.Test;
 
+import java.util.Optional;
+
 import static java.lang.System.out;
 
 /**
@@ -31,6 +33,16 @@ public class OptionalTest {
 
         java.util.Optional<String> lowerName = upperName.flatMap((val) -> java.util.Optional.of(val.toLowerCase()));
         out.println(lowerName.orElse("No lowerCase value found!"));      //flatMap方法与map方法类似，区别在于mapping函数的返回值不同。map方法的mapping函数返回值可以是任何类型T，而flatMap方法的mapping函数必须是Optional
+    }
+
+
+    @Test
+    public void testPerson() {
+        Insurance insurance = new Insurance();
+        insurance.setName("tianping!");
+        Optional<Insurance> insuranceOptional = Optional.ofNullable(insurance);
+        Optional<String> name = insuranceOptional.map(Insurance :: getName);
+        out.println("Insurance name: " + name);
     }
 
 }
