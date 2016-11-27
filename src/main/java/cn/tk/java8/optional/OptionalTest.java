@@ -37,12 +37,23 @@ public class OptionalTest {
 
 
     @Test
-    public void testPerson() {
+    public void testMap() {
         Insurance insurance = new Insurance();
         insurance.setName("tianping!");
         Optional<Insurance> insuranceOptional = Optional.ofNullable(insurance);
         Optional<String> name = insuranceOptional.map(Insurance :: getName);
         out.println("Insurance name: " + name);
+    }
+
+    @Test
+    public void testFlatMap() {
+        Person person = new Person();
+        Optional<Person> personOptional = Optional.of(person);
+        String name = personOptional.flatMap(Person :: getCar)
+                .flatMap(Car :: getInsurance)
+                .map(Insurance :: getName)
+                .orElse("unknown");
+        out.println("name: " + name);
     }
 
 }
