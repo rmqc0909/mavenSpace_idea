@@ -1,17 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="Encoding">
-    <file url="file://$PROJECT_DIR$/src/main/java/cn/tk/guava/access_control" charset="GBK" />
-    <file url="file://$PROJECT_DIR$/src/main/java/cn/tk/guava/generic" charset="GBK" />
-    <file url="file://$PROJECT_DIR$/src/main/java/cn/tk/guava/inner_class" charset="GBK" />
-    <file url="file://$PROJECT_DIR$/src/main/java/cn/tk/guava/interfaces" charset="GBK" />
-    <file url="file://$PROJECT_DIR$/src/main/java/cn/tk/guava/java8" charset="GBK" />
-    <file url="file://$PROJECT_DIR$/src/main/java/cn/tk/guava/leetcode" charset="GBK" />
-    <file url="file://$PROJECT_DIR$/src/main/java/cn/tk/guava/polymiorphism" charset="GBK" />
-    <file url="file://$PROJECT_DIR$/src/main/java/cn/tk/guava/reuse_clazz" charset="GBK" />
-    <file url="file://$PROJECT_DIR$/src/main/java/cn/tk/guava/string" charset="GBK" />
-    <file url="file://$PROJECT_DIR$/src/main/java/cn/tk/guava/study" charset="GBK" />
-    <file url="file://$PROJECT_DIR$/src/main/java/cn/tk/guava/study/xor/XOR.java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/src/main/java/cn/tk/guava/sun_pang_zi" charset="GBK" />
+  <component name="Encoding" defaultCharsetForPropertiesFiles="UTF-8">
+    <file url="PROJECT" charset="UTF-8" />
   </component>
 </project>
