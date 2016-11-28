@@ -1,4 +1,4 @@
-package cn.tk.java8.optional;
+package cn.tk.java8;
 
 import org.junit.Test;
 
