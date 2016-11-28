@@ -42,7 +42,7 @@ public class OptionalTest {
         insurance.setName("tianping!");
         Optional<Insurance> insuranceOptional = Optional.ofNullable(insurance);
         Optional<String> name = insuranceOptional.map(Insurance :: getName);
-        out.println("Insurance name: " + name);
+        out.println("Insurance name:" + name);
     }
 
     @Test
@@ -53,7 +53,7 @@ public class OptionalTest {
                 .flatMap(Car :: getInsurance)
                 .map(Insurance :: getName)
                 .orElse("unknown");
-        out.println("name: " + name);
+        out.println("name:" + name);
     }
 
 }
